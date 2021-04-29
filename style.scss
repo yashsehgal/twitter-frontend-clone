@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  line-height: inherit;
+  box-sizing: border-box;
+}
+
+body {
+  margin-right: auto;
+  margin-left: auto;
+  max-width: 1400px;
+  display: grid;
+  grid-template-columns: 22% auto auto;
+}
+
+header {
+  padding: 1em;
+  overflow: hidden;
+  position: relative;
+  scroll-behavior: auto;
+}
+
+header i.fa-twitter {
+  color: #1DA1F2;
+  font-size: 36px;
+  margin-left: 14px;
+  padding: 6px;
+  border-radius: 100%;
+  transition: all 0.2s ease-in-out;
+}
+
+header i.fa-twitter:hover {
+  background-color: #1da0f22c;
+}
+
+header nav {
+  margin-top: 3em;
+}
+
+header nav ul {
+  list-style: none;
+  margin: 0;
+}
+
+header nav ul li {
+  color: black;
+  align-items: center;
+  display: flex;
+  font-size: large;
+  font-weight: 600;
+  line-height: 2.4em;
+  padding: 0.5em;
+  border-radius: 100%;
+}
+
+header nav ul li > a {
+  padding-left: 6px;
+  padding-right: 6px;
+  border-radius: 24px;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+
+header nav ul li > a:hover {
+  background-color: #1da0f22c;
+  color: #1DA1F2;
+}
+
+header nav ul li i.fa-ellipsis-h {
+  font-size: 24px;
+}
+
+header nav button.tweet-button {
+  background-color: #1DA1F2;
+  color: white;
+  border: none;
+  font-weight: bold;
+  font-family: "Roboto",
+  sans-serif;
+  padding: 1em;
+  width: 100%;
+  border-radius: 50px;
+  transition: all 0.2s ease-in-out;
+}
+
+header nav button.tweet-button:hover {
+  filter: brightness(85%);
+}
+
+.main-body-container {
+  border: 0.4px solid;
+  border-color: rgba(128, 128, 128, 0.301);
+  border-radius: 8px;
+}
+
+.tweet {
+  background-color: white;
+  padding: 1em;
+  border: 0.4px solid;
+  border-color: rgba(128, 128, 128, 0.301);
+  cursor: pointer;
+}
+
+.tweet:hover {
+  background-color: rgba(128, 128, 128, 0.225);
+}
+
+.tweet-profile-image {
+  width: 42px;
+  border-radius: 100px;
+}
+
+.tweet-user-details-layer {
+  display: flex;
+  align-items: center;
+}
+
+.tweet-full-name {
+  font-family: "Roboto",
+  sans-serif;
+  font-weight: 600;
+  margin-left: 6px;
+}
+
+.tweet-username {
+  color: gray;
+  font-size: small;
+  margin-left: 4px;
+}
+
+.tweet-content {
+  padding: 1em;
+}
+
+.tweet-action-layer {
+  width: 100%;
+  margin-top: 1em;
+}
+
+.tweet-action-layer > ul {
+  display: flex;
+  list-style: none;
+}
+
+.tweet-action-layer > ul > li {
+  margin-right: auto;
+  margin-left: auto;
+  color: gray;
+  cursor: pointer;
+}
+
+.tweet-action-layer > ul > li:hover {
+  color: #1DA1F2;
+}
+
+.section-title {
+  margin-bottom: 1em;
+  width: 100%;
+  border-bottom: 0.4px solid;
+  border-color: rgba(128, 128, 128, 0.301);
+}
+
+.create-tweet-section {
+  display: grid;
+  grid-template-columns: auto 100%;
+  margin-bottom: 2em;
+  padding: 1em;
+}
+
+.create-tweet-section-right {
+  width: 100%;
+}
+
+.tweet-text-area {
+  resize: none;
+  border: none;
+  padding: 1em;
+  height: 4em;
+  width: 100%;
+  font-size: 24px;
+  font-weight: inherit;
+  font-family: "Roboto", sans-serif;
+  background-color: none;
+  overflow: hidden;
+}
+
+.tweet-text-area:focus {
+  outline: none;
+}
+
+.tweet-type-option {
+  color: #1DA1F2;
+  font-weight: 600;
+  font-size: small;
+}
+
+.tweet-button {
+   background-color: #1DA1F2;
+   color: white;
+   border: none;
+   font-weight: bold;
+   font-family: "Roboto",
+   sans-serif;
+   padding: 1em;
+   width: 100%;
+   border-radius: 50px;
+   transition: all 0.2s ease-in-out;
+}
+
+.tweet-button:hover {
+  filter: brightness(85%);
+}
+
+.create-tweet-action-layer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto;
+  align-items: center;
+}
+
+.create-tweet-action-layer > div {
+  display: flex;
+  align-items: center;
+}
+
+.create-tweet-action-layer > div > i {
+  margin-right: 1em;
+  color: #1DA1F2;
+}
+
+.create-tweet-action-layer > button {
+  width: 100px;
+}
