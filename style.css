@@ -189,10 +189,12 @@ header nav button.tweet-button:hover {
       grid-template-columns: auto 100%;
   margin-bottom: 2em;
   padding: 1em;
+  font-family: "Roboto", sans-serif;
 }
 
 .create-tweet-section-right {
-  width: 100%;
+  width: 90%;
+  font-family: "Roboto", sans-serif;
 }
 
 .tweet-text-area {
