@@ -85,7 +85,8 @@ header nav button.tweet-button {
   color: white;
   border: none;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",
+ sans-serif;
   padding: 1em;
   width: 100%;
   border-radius: 50px;
@@ -96,6 +97,10 @@ header nav button.tweet-button {
 header nav button.tweet-button:hover {
   -webkit-filter: brightness(85%);
           filter: brightness(85%);
+}
+
+.tweet-button:focus {
+  outline: 0 !important;
 }
 
 .main-body-container {
@@ -131,7 +136,8 @@ header nav button.tweet-button:hover {
 }
 
 .tweet-full-name {
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",
+ sans-serif;
   font-weight: 600;
   margin-left: 6px;
 }
@@ -217,7 +223,8 @@ header nav button.tweet-button:hover {
   color: white;
   border: none;
   font-weight: bold;
-  font-family: "Roboto", sans-serif;
+  font-family: "Roboto",
+ sans-serif;
   padding: 1em;
   width: 100%;
   border-radius: 50px;
