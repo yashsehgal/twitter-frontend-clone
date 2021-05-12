@@ -13,8 +13,8 @@ body {
   max-width: 1400px;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 22% auto auto;
-      grid-template-columns: 22% auto auto;
+  -ms-grid-columns: 22% auto 32%;
+  grid-template-columns: 22% auto 32%;
 }
 
 header {
@@ -27,7 +27,6 @@ header {
 header i.fa-twitter {
   color: #1DA1F2;
   font-size: 36px;
-  margin-left: 14px;
   padding: 12px;
   border-radius: 100%;
   -webkit-transition: all 0.2s ease-in-out;
@@ -124,6 +123,10 @@ header nav button.tweet-button:hover {
   border: 0.4px solid;
   border-color: rgba(128, 128, 128, 0.301);
   cursor: pointer;
+  border-left: none;
+    border-right: none;
+    border-bottom: none;
+    padding-bottom: 0.2rem;
 }
 
 .tweet:hover {
@@ -133,6 +136,7 @@ header nav button.tweet-button:hover {
 .tweet-profile-image {
   width: 42px;
   border-radius: 100px;
+  margin-right: 0.5rem;
 }
 
 .tweet-user-details-layer {
@@ -159,11 +163,16 @@ header nav button.tweet-button:hover {
 
 .tweet-content {
   padding: 1em;
+  padding-left: 3.5rem;
+  padding-top: 0; 
+  padding-bottom: 0;
+  padding-bottom: 0.5rem;
 }
 
 .tweet-action-layer {
   width: 100%;
   margin-top: 1em;
+  margin: 0 -1rem;
 }
 
 .tweet-action-layer > ul {
@@ -178,10 +187,13 @@ header nav button.tweet-button:hover {
   margin-left: auto;
   color: gray;
   cursor: pointer;
+  padding: 0.6rem;
 }
 
 .tweet-action-layer > ul > li:hover {
   color: #1DA1F2;
+  border-radius: 50%;
+  background-color:#1da0f22c; ;
 }
 
 .section-title {
@@ -194,14 +206,14 @@ header nav button.tweet-button:hover {
 .create-tweet-section {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: auto 100%;
-      grid-template-columns: auto 100%;
+  -ms-grid-columns: 7% auto;
+  grid-template-columns: 7% auto;
   padding: 1em;
   font-family: "Roboto", sans-serif;
 }
 
 .create-tweet-section-right {
-  width: 90%;
+  width: 96%;
   font-family: "Roboto", sans-serif;
 }
 
@@ -273,4 +285,7 @@ header nav button.tweet-button:hover {
 .create-tweet-action-layer > button {
   width: 100px;
 }
+.trending-section-container{
+  padding: 1rem;
+ 
 /*# sourceMappingURL=style.css.map */
